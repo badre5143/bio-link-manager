@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Platform Bio Link Manager - Create Instagram, TikTok, YouTube Bio Links</title>
+    <meta name="description" content="Free Multi-Platform Bio Link Manager - Create beautiful bio links for Instagram, TikTok, YouTube, Twitter. All-in-one link management tool for content creators.">
+
+    <!-- JSON-LD STRUCTURED DATA -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Multi-Platform Bio Link Manager",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Any",
+        "description": "Free tool to create and manage multi-platform bio links for Instagram, TikTok, YouTube, Twitter and all social media platforms",
+        "url": "https://socialmediafreetools.com/bio-link-manager",
+        "author": {
+            "@type": "Organization",
+            "name": "SocialMediaFreeTools.com"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "Multi-platform bio links",
+            "Instagram link optimization", 
+            "TikTok bio management",
+            "YouTube description links",
+            "Twitter profile linking",
+            "Custom branding",
+            "Mobile responsive design"
+        ],
+        "softwareVersion": "1.0"
+    }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="tool-header">
+            <h1>🔗 Multi-Platform Bio Link Manager</h1>
+            <p class="subtitle">Create beautiful bio links for all social media platforms</p>
+            <div class="brand">by SocialMediaFreeTools.com</div>
+        </header>
+
+        <!-- Platform Selector -->
+        <div class="platform-selector">
+            <div class="platform-buttons">
+                <button class="platform-btn active" data-platform="all">🌐 All Platforms</button>
+                <button class="platform-btn" data-platform="instagram">📷 Instagram</button>
+                <button class="platform-btn" data-platform="tiktok">🎵 TikTok</button>
+                <button class="platform-btn" data-platform="youtube">📺 YouTube</button>
+                <button class="platform-btn" data-platform="twitter">🐦 Twitter</button>
+            </div>
+        </div>
+
+        <!-- Main Input Section -->
+        <div class="input-section">
+            <!-- Profile Info -->
+            <div class="input-group">
+                <label for="profileName">👤 Your Name/Brand</label>
+                <input type="text" id="profileName" placeholder="Enter your name or brand">
+            </div>
+
+            <!-- Bio Description -->
+            <div class="input-group">
+                <label for="bioDescription">📝 Bio Description</label>
+                <textarea id="bioDescription" placeholder="Write your bio description here..." rows="3"></textarea>
+            </div>
+
+            <!-- Links Section -->
+            <div class="links-section">
+                <h3>🔗 Add Your Links</h3>
+                <div id="linksContainer">
+                    <!-- Links will be added here dynamically -->
+                    <div class="link-item">
+                        <input type="text" class="link-title" placeholder="Link Title (e.g., My Website)">
+                        <input type="url" class="link-url" placeholder="https://example.com">
+                        <button class="remove-link" onclick="removeLink(this)">❌</button>
+                    </div>
+                </div>
+                <button class="add-link-btn" onclick="addNewLink()">➕ Add Another Link</button>
+            </div>
+
+            <!-- Theme Customization -->
+            <div class="theme-section">
+                <h3>🎨 Customize Appearance</h3>
+                <div class="theme-options">
+                    <div class="theme-option">
+                        <label>Background Color</label>
+                        <input type="color" id="bgColor" value="#ffffff">
+                    </div>
+                    <div class="theme-option">
+                        <label>Text Color</label>
+                        <input type="color" id="textColor" value="#000000">
+                    </div>
+                    <div class="theme-option">
+                        <label>Button Color</label>
+                        <input type="color" id="buttonColor" value="#667eea">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Generate Button -->
+            <button id="generateBtn" class="generate-btn">🎯 Generate Bio Links</button>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-section" id="results" style="display: none;">
+            <h3>✨ Your Bio Link Page</h3>
+            
+            <!-- Preview Section -->
+            <div class="preview-section">
+                <h4>📱 Live Preview</h4>
+                <div class="bio-preview" id="bioPreview">
+                    <!-- Preview will be generated here -->
+                </div>
+            </div>
+
+            <!-- Platform Specific Codes -->
+            <div class="platform-codes" id="platformCodes">
+                <!-- Platform specific codes will appear here -->
+            </div>
+
+            <!-- Reset Button -->
+            <button id="resetBtn" class="reset-btn" onclick="resetTool()">🔄 Create New Bio Page</button>
+        </div>
+
+        <!-- Features Section -->
+        <div class="features-section">
+            <h3>💡 Why Use Our Bio Link Manager?</h3>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h4>🔗 Multiple Links</h4>
+                    <p>Add unlimited links in one bio</p>
+                </div>
+                <div class="feature-card">
+                    <h4>📱 Mobile Optimized</h4>
+                    <p>Perfect for mobile users</p>
+                </div>
+                <div class="feature-card">
+                    <h4>🎨 Customizable</h4>
+                    <p>Match your brand colors</p>
+                </div>
+                <div class="feature-card">
+                    <h4>💯 Free Forever</h4>
+                    <p>No hidden costs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
